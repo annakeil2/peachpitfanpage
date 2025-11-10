@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+  background-color: #27105e;  /* or your chosen variant */
+  color: #ffffff;             /* dark text for contrast */
+  font-size: larger;
+  margin: auto;
+  padding: auto;
+  font-family:'Funnel Sans', sans-serif;
+}
+
+#content {
+    display: flex;
+    /* background-color: #e30cf7; */
+    align-items: center;
+    flex-direction: column;
+    min-height: 650px;
+    max-width: 1150px;
+    margin-inline: auto;
+}
+
+h1.peach-pit-style {
+  font-family: 'Coral Pixel', sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(245, 242, 70);
+  filter: url(#zigzag);
+  background-color: #1a1a1a;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+}
+
+.topnav {
+  background-color: #000001;
+  overflow: -moz-hidden-unscrollable;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  font-family: 'Coral Pixel', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.81rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a:visited{
+  /* background-color: #ddd; */
+  color: #ffffff;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04da8c;
+  color: white;
+}
+
+a {
+  color: rgb(245, 242, 70);
+  text-decoration: none; /* removes underline */
+}
+
+/* Visited link */
+a:visited {
+  color: rgb(99, 108, 109);
+}
+
+/* Hover effect */
+a:hover {
+  color: rgb(252, 150, 48);
+  text-decoration: underline
+}
+
+/* Active link (when clicked) */
+a:active {
+  color: rgb(255, 255, 255);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* #mainphoto{
+    display: block;
+    max-width: 100%;
+} */
+
+.site-footer {
+  /* background-color: #e6dcdc; dark footer */
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
