@@ -2,7 +2,7 @@
 
 
 body {
-  background-color: #19034a;  /* or your chosen variant */
+  background-color: #100230;  /* or your chosen variant */
   color: #ffffff;             /* dark text for contrast */
   font-size: larger;
   margin: auto;
@@ -89,18 +89,18 @@ h1.peach-pit-style {
 }
 
 a {
-  color: #c22a04;
+  color: #f28d74;
   text-decoration: none; /* removes underline */
 }
 
 /* Visited link */
 a:visited {
-  color: rgb(144, 12, 2);
+  color: rgb(253, 182, 177);
 }
 
 /* Hover effect */
 a:hover {
-  color: #ac3b1f;
+  color: #f4ed80;
   text-decoration: underline
 }
 
@@ -184,6 +184,47 @@ contribute {
 
 #contribute a:hover {
   color: rgb(245, 242, 70);
+}
+
+#funfacts-section {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0rem;
+    font-family: 'Funnel Sans', sans-serif;
+    color: #ffffff;
+}
+
+#funfacts-section h2 {
+    font-family: 'VT323', sans-serif;
+    font-size: 3rem;
+    color: rgb(246, 244, 162);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+#funfacts-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.float-left {
+  float: left;
+  margin: 10px;
+}
+
+.membersimage {
+  width:30%;
+  min-width: 15%;
+  max-width:30%;
+}
+
+#videowrapper {
+  align-self: center;
+}
+
+#videowrapper > h2 {
+  margin-bottom: 55px;
 }
 
 .site-footer {
