@@ -8,6 +8,9 @@ body {
   margin: auto;
   padding: auto;
   font-family:'Funnel Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #content {
@@ -24,7 +27,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  max-width: 1150px;
 }
 
 #logowrapper {
@@ -44,7 +47,7 @@ header {
 
 h1.peach-pit-style {
   font-family: 'VT323', sans-serif;
-  font-size: 6.8rem;
+  font-size: 9vw;
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(245, 242, 70);
@@ -87,6 +90,43 @@ h1.peach-pit-style {
   color: rgb(4, 7, 0);
 }
 
+
+#burgermenu {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  @property --item-size {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 200px;
+  }
+
+  header {
+    position: fixed;
+    height: var(--item-size);
+  }
+
+
+  .topnav {
+    display: none;
+  }
+  #burgermenu {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #04da8c;
+  }
+
+  #content{
+    margin-top: var(--item-size);
+  }
+}
+
+
+
+
 a {
   color: #f28d74;
   text-decoration: none; /* removes underline */
@@ -107,9 +147,6 @@ a:hover {
 a:active {
   color: rgb(255, 255, 255);
 }
-
-
-
 
 @/* Only targets picture-gallery section */
 .picture-gallery {
@@ -168,17 +205,10 @@ a:active {
 }
 
 
-
-
 img {
   display: block;
   max-width: 100%;
 }
-
-/* #mainphoto{
-    display: block;
-    max-width: 100%;
-} */
 
 h3 {
   text-align: left;
@@ -282,6 +312,9 @@ tr:nth-child(odd) {
 
 #videowrapper {
   align-self: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #videowrapper > h2 {
@@ -289,10 +322,9 @@ tr:nth-child(odd) {
 }
 
 .site-footer {
-  /* background-color: #e6dcdc; dark footer */
   color: #fff;
   text-align: center;
   align-self: center;
   padding: 1rem 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
