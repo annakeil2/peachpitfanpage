@@ -4,7 +4,7 @@
 body {
   background-color: #100230;  /* or your chosen variant */
   color: #ffffff;             /* dark text for contrast */
-  font-size: larger;
+  font-size: 1.9rem;
   margin: auto;
   padding: auto;
   font-family:'Funnel Sans', sans-serif;
@@ -21,6 +21,13 @@ body {
     max-width: 1150px;
     margin-inline: auto;
 }
+
+#content p, #content h1 {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  margin: 2rem 0;
+}
+
 
 header {
   display: flex;
@@ -71,7 +78,7 @@ h1.peach-pit-style {
   text-align: center;
   padding: 14px 36px;
   text-decoration: none;
-  font-size: 2.05rem;
+  font-size: 2.2rem;
 }
 
 /* Change the color of links on hover */
@@ -285,21 +292,15 @@ tr:nth-child(odd) {
 
 #funfacts-section h2 {
     font-family: 'VT323', sans-serif;
-    font-size: 3rem;
     color: rgb(246, 244, 162);
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-#funfacts-section p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 3rem;
-}
 
 .float-left {
   float: left;
-  margin: 10px;
+  margin: 28px 50px 0 0;
 }
 
 .membersimage {
