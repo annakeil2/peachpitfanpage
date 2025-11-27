@@ -45,10 +45,15 @@ header {
 }
 
 .logo {
-  height: 154px; /* adjust as needed */
+  /* height: 154px;  */
+  /* adjust as needed */
   width: auto;
-  vertical-align: middle;
-  
+  min-width: 100px;
+  background-image: url("images/logo.png");
+  display: block;
+  flex-grow: 1;
+  flex-basis: 155px;
+  aspect-ratio: 3 / 2;
 }
 
 h1.peach-pit-style {
@@ -61,7 +66,8 @@ h1.peach-pit-style {
   display: inline-block;
   padding: 0.2em 0.4em;
   margin: 0; /* remove default margin */
-  flex-grow: 1;
+  flex-grow: 4;
+  flex-basis: 2;
 }
 
 .topnav {
@@ -97,38 +103,6 @@ h1.peach-pit-style {
 }
 
 
-#burgermenu {
-  display: none;
-}
-
-/* Media queries */
-@media (max-width: 1024px) {
-  @property --item-size {
-    syntax: "<length>";
-    inherits: false;
-    initial-value: 200px;
-  }
-
-  header {
-    position: fixed;
-    height: var(--item-size);
-  }
-
-
-  .topnav {
-    display: none;
-  }
-  #burgermenu {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #04da8c;
-  }
-
-  #content{
-    margin-top: var(--item-size);
-  }
-}
 
 
 

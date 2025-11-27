@@ -1,0 +1,49 @@
+#burgermenu {
+    display: none;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    @property --item-size {
+        syntax: "<length>";
+        inherits: false;
+        initial-value: 100px;
+    }
+
+    body {
+        align-items: flex-start;
+    }
+
+    header {
+        position: fixed;
+        height: var(--item-size);
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    #logowrapper {
+        background-color: #1a1a1a;
+    }
+
+    .logo {
+        /* height: var(--item-size); */
+        background-size: 100%;
+        /* flex-basis: 100px;
+        aspect-ratio: 3 / 2; */
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    #burgermenu {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-color: #04da8c;
+    }
+
+    #content {
+        margin-top: var(--item-size);
+    }
+}
