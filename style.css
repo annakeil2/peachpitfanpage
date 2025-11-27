@@ -42,6 +42,8 @@ header {
   gap: 0; /* no space between logo and text */
   flex-grow: 1; 
   width: 100%;
+  background-color: #1a1a1a;
+
 }
 
 .logo {

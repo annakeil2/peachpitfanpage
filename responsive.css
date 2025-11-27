@@ -21,15 +21,14 @@
         width: 100%;
     }
 
-    #logowrapper {
-        background-color: #1a1a1a;
-    }
+
 
     .logo {
         /* height: var(--item-size); */
         background-size: 100%;
         /* flex-basis: 100px;
         aspect-ratio: 3 / 2; */
+
     }
 
     .topnav {
@@ -45,5 +44,12 @@
 
     #content {
         margin-top: var(--item-size);
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        width: 8em;
+        flex-basis: auto;
     }
 }
