@@ -4,21 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <title>Peach Pit Unofficial Fan Page</title>
   <meta name="description"
     content="This is a website designed for fans of the Canadian indie pop band, called Peach Pit.
     It features 4 pages: one to serve as a homepage (landing page), one that details their work including all their albums,one serving
-    as a gallery, one detailing all their tours to date, one that lists fun facts where submissions can also be added by visitors." />
-  <meta name="keywords" content="Peach Pit Fan Page, Peach Pit, Peach Pit Band" />
-  <meta name="author" content="Anna Keil" />
-  <link rel="stylesheet" href="style.css" />
+    as a gallery, one detailing all their tours to date, one that lists fun facts where submissions can also be added by visitors.">
+  <meta name="keywords" content="Peach Pit Fan Page, Peach Pit, Peach Pit Band">
+  <meta name="author" content="Anna Keil">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-  <div id="content">
+  <div class="pagewrapper">
+    <div id="burgermenu">
+      <div class="burgericon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <input type="checkbox" id="burgercheckbox">
+      <div id="burgerscreen">
+        <div class="burgerlinks">
+          <a href="index.html">Home</a>
+          <a class="active" href="#home">Imagery</a>
+          <a href="history.html">History</a>
+          <a href="funfacts.html">Fun Facts</a>
+        </div>
+      </div>
+    </div>
     <header>
       <div id="logowrapper">
-        <img src="images/logo.png" My Website Logo" class="logo">
+        <!-- <img src="images/logo.png"My Website Logo" class="logo"> -->
+        <div class="logo"></div>
         <h1 class=peach-pit-style>Peach Pit Fan Page</h1>
       </div>
       <div class="topnav">
@@ -28,163 +47,201 @@
         <a href="funfacts.html">Fun Facts</a>
       </div>
     </header>
-    <div>
-      <h2>Peach Pit's General Imagery</h2>
-      <p>Peach Pit’s imagery is a huge part of what makes them so lovable, and fans quickly notice how their aesthetic
-        blends nostalgia, awkward charm, and summery warmth. Their visuals often feel like the vibe of a late-July
-        afternoon:
-        soft pastel tones, slightly washed-out colors, and warm hues like peach, coral, soft pink, and muted teal. Album
-        covers, merch, and social media posts frequently lean into this palette, giving everything a sun-soaked,
-        retro-tinged feel.
-        It’s casual, intimate, and visually comforting—like flipping through old photos of your coolest friends.</p>
+    <div id="content">
+      <div>
+        <h2>Peach Pit's General Imagery</h2>
+        <p>Peach Pit’s imagery is a huge part of what makes them so lovable, and fans quickly notice how their aesthetic
+          blends nostalgia, awkward charm, and summery warmth. Their visuals often feel like the vibe of a late-July
+          afternoon:
+          soft pastel tones, slightly washed-out colors, and warm hues like peach, coral, soft pink, and muted teal.
+          Album
+          covers, merch, and social media posts frequently lean into this palette, giving everything a sun-soaked,
+          retro-tinged feel.
+          It’s casual, intimate, and visually comforting—like flipping through old photos of your coolest friends.</p>
 
-      <p>Another fun part of their imagery is how the band themselves appear in videos. Peach Pit frequently embraces
-        offbeat humor, slow-motion close-ups, and intentionally awkward acting,
-        which fits their playful personality perfectly. Their use of warm, muted lighting and soft color grading
-        enhances this vibe, making scenes feel like they’re bathed in golden-hour glow.
-        Fans love that the visuals match the band’s quirky charm: they look silly, authentic, and relaxed, which makes
-        every video feel like an inside joke you’re invited to share.</p>
+        <p>Another fun part of their imagery is how the band themselves appear in videos. Peach Pit frequently embraces
+          offbeat humor, slow-motion close-ups, and intentionally awkward acting,
+          which fits their playful personality perfectly. Their use of warm, muted lighting and soft color grading
+          enhances this vibe, making scenes feel like they’re bathed in golden-hour glow.
+          Fans love that the visuals match the band’s quirky charm: they look silly, authentic, and relaxed, which makes
+          every video feel like an inside joke you’re invited to share.</p>
 
-      <p>Their imagery also mirrors the themes in their music: youthful angst, late-night drives, messy relationships,
-        and self-deprecating storytelling. Recurring visuals—neon lights, suburban streets, bedrooms,
-        and friends hanging out—often appear in muted, peachy-pink and teal tones, reinforcing that cozy, familiar
-        feeling. For fans, Peach Pit’s color palette and visual style aren’t just decoration;
-        they amplify the warmth and humor in their music, creating a universe that’s fun, nostalgic, and impossible not
-        to fall into.</p>
-      <p>Beyond the aesthetics themselves, Peach Pit’s imagery helps build a sense of community among fans. People often
-        recreate the band’s signature look in fan art, edits, and moodboards, using the same
-        soft lighting and washed-out colors to capture that dreamy, slightly bittersweet feeling. Even live show photos
-        tend to carry this vibe—warm stage lights, candid moments, and the band’s laid-back energy
-        all translate effortlessly into the Peach Pit visual universe. It’s an aesthetic that feels accessible and
-        personal, inviting fans to see pieces of their own lives reflected back in the band’s world.</p>
-      <p>Their visual consistency also makes Peach Pit instantly recognizable, even without text or context. A single
-        screenshot from a music video or a snippet of album artwork can immediately signal the band’s identity:
-        nostalgic but modern, humorous yet sincere, messy in the most endearing way. This strong visual branding doesn’t
-        feel manufactured—it feels like a natural extension of who they are. As their music evolves,
-        their imagery grows with it, but that signature blend of warmth, softness, and tongue-in-cheek charm remains at
-        the heart of everything they create.</p>
-      <br>
+        <p>Their imagery also mirrors the themes in their music: youthful angst, late-night drives, messy relationships,
+          and self-deprecating storytelling. Recurring visuals—neon lights, suburban streets, bedrooms,
+          and friends hanging out—often appear in muted, peachy-pink and teal tones, reinforcing that cozy, familiar
+          feeling. For fans, Peach Pit’s color palette and visual style aren’t just decoration;
+          they amplify the warmth and humor in their music, creating a universe that’s fun, nostalgic, and impossible
+          not
+          to fall into.</p>
+        <p>Beyond the aesthetics themselves, Peach Pit’s imagery helps build a sense of community among fans. People
+          often
+          recreate the band’s signature look in fan art, edits, and moodboards, using the same
+          soft lighting and washed-out colors to capture that dreamy, slightly bittersweet feeling. Even live show
+          photos
+          tend to carry this vibe—warm stage lights, candid moments, and the band’s laid-back energy
+          all translate effortlessly into the Peach Pit visual universe. It’s an aesthetic that feels accessible and
+          personal, inviting fans to see pieces of their own lives reflected back in the band’s world.</p>
+        <p>Their visual consistency also makes Peach Pit instantly recognizable, even without text or context. A single
+          screenshot from a music video or a snippet of album artwork can immediately signal the band’s identity:
+          nostalgic but modern, humorous yet sincere, messy in the most endearing way. This strong visual branding
+          doesn’t
+          feel manufactured—it feels like a natural extension of who they are. As their music evolves,
+          their imagery grows with it, but that signature blend of warmth, softness, and tongue-in-cheek charm remains
+          at
+          the heart of everything they create.</p>
+        <br>
 
+        <div class="gradient-wave">
+          <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="funkyGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ff00cc" />
+                <stop offset="50%" stop-color="#7a2cff" />
+                <stop offset="100%" stop-color="#00eaff" />
+              </linearGradient>
+            </defs>
 
-      <section class="picture-gallery paper border shadow shadow-large">
-        <h1>Popular Peach Pit-coded Images</h1>
-        <ul class="gallery-list">
+            <path d="M0,50 C200,0 400,100 600,50 C800,0 1000,100 1200,50 L1200,100 L0,100 Z" fill="url(#funkyGradient1)">
+            </path>
+          </svg>
+        </div>
 
-          <!-- Image 1 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_black_and_white.jpg" alt="Image 1">
-          </li>
+        <h2>Popular Peach Pit-coded Images</h2>
+        <div class="picture-gallery">
+          <ul class="gallery-list">
 
-          <!-- Image 2 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/fan_art.jpg" alt="Image 2">
-          </li>
+            <!-- Image 1 -->
+            <li>
+              <img src="images/members_black_and_white.jpg" alt="Image 1">
+            </li>
 
-          <!-- Image 3 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/guitarplayer.jpg" alt="Image 3">
-          </li>
+            <!-- Image 2 -->
+            <li>
+              <img src="images/fan_art.jpg" alt="Image 2">
+            </li>
 
-          <!-- Image 4 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/guitarplayer_sunglasses.jpg" alt="Image 4">
-          </li>
+            <!-- Image 3 -->
+            <li>
+              <img src="images/guitarplayer.jpg" alt="Image 3">
+            </li>
 
-          <!-- Image 5 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_hugging.jpg" alt="Image 5">
-          </li>
+            <!-- Image 4 -->
+            <li>
+              <img src="images/guitarplayer_sunglasses.jpg" alt="Image 4">
+            </li>
 
-          <!-- Image 6 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_hugging_smiling.jpg" alt="Image 6">
-          </li>
+            <!-- Image 5 -->
+            <li>
+              <img src="images/members_hugging.jpg" alt="Image 5">
+            </li>
 
-          <!-- Image 7 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/literal_peachpit.jpg" alt="Image 7">
-          </li>
+            <!-- Image 6 -->
+            <li>
+              <img src="images/members_hugging_smiling.jpg" alt="Image 6">
+            </li>
 
-          <!-- Image 8 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_in_blue_jumper.jpg" alt="Image 8">
-          </li>
+            <!-- Image 7 -->
+            <li>
+              <img src="images/literal_peachpit.jpg" alt="Image 7">
+            </li>
 
-          <!-- Image 9 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_in_car.jpg" alt="Image 9">
-          </li>
+            <!-- Image 8 -->
+            <li>
+              <img src="images/members_in_blue_jumper.jpg" alt="Image 8">
+            </li>
 
-          <!-- Image 10 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_in_crops.jpg" alt="Image 10">
-          </li>
+            <!-- Image 9 -->
+            <li>
+              <img src="images/members_in_car.jpg" alt="Image 9">
+            </li>
 
-          <!-- Image 11 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_in_pink.jpeg" alt="Image 11">
-          </li>
+            <!-- Image 10 -->
+            <li>
+              <img src="images/members_in_crops.jpg" alt="Image 10">
+            </li>
 
-          <!-- Image 12 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_lying_in_grass.jpg" alt="Image 12">
-          </li>
+            <!-- Image 11 -->
+            <li>
+              <img src="images/members_in_pink.jpeg" alt="Image 11">
+            </li>
 
-          <!-- Image 13 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_posing.jpg" alt="Image 13">
-          </li>
+            <!-- Image 12 -->
+            <li>
+              <img src="images/members_lying_in_grass.jpg" alt="Image 12">
+            </li>
 
-          <!-- Image 14 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_teaparty.jpg" alt="Image 14">
-          </li>
+            <!-- Image 13 -->
+            <li>
+              <img src="images/members_posing.jpg" alt="Image 13">
+            </li>
 
-          <!-- Image 15 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/members_with_bunny.jpg" alt="Image 15">
-          </li>
+            <!-- Image 14 -->
+            <li>
+              <img src="images/members_teaparty.jpg" alt="Image 14">
+            </li>
 
-          <!-- Image 16 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/peachpit_band.jpg" alt="Image 16">
-          </li>
+            <!-- Image 15 -->
+            <li>
+              <img src="images/members_with_bunny.jpg" alt="Image 15">
+            </li>
 
-          <!-- Image 17 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/peachpit_posing.jpg" alt="Image 17">
-          </li>
+            <!-- Image 16 -->
+            <li>
+              <img src="images/peachpit_band.jpg" alt="Image 16">
+            </li>
 
-          <!-- Image 18 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/pink_members.jpeg" alt="Image 18">
-          </li>
+            <!-- Image 17 -->
+            <li>
+              <img src="images/peachpit_posing.jpg" alt="Image 17">
+            </li>
 
-          <!-- Image 19 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/shampoo_bottles_snippet.png" alt="Image 19">
-          </li>
+            <!-- Image 18 -->
+            <li>
+              <img src="images/pink_members.jpeg" alt="Image 18">
+            </li>
 
-          <!-- Image 20 -->
-          <li class="paper border shadow shadow-large shadow-hover">
-            <img src="images/singer.jpg" alt="Image 20">
-          </li>
+            <!-- Image 19 -->
+            <li>
+              <img src="images/shampoo_bottles_snippet.png" alt="Image 19">
+            </li>
 
-        </ul>
-      </section>
+            <!-- Image 20 -->
+            <li>
+              <img src="images/singer.jpg" alt="Image 20">
+            </li>
 
-      <div id="videowrapper">
-        <h2>An interview that says a lot - why not give it a listen?</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/D9f6149mgRg?si=LCog4Vi87MrBpdBB"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </ul>
+        </div>
+
+        <div class="gradient-wave">
+          <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="funkyGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ff00cc" />
+                <stop offset="50%" stop-color="#7a2cff" />
+                <stop offset="100%" stop-color="#00eaff" />
+              </linearGradient>
+            </defs>
+
+            <path d="M0,50 C200,0 400,100 600,50 C800,0 1000,100 1200,50 L1200,100 L0,100 Z" fill="url(#funkyGradient2)">
+            </path>
+          </svg>
+        </div>
+
+        <div id="videowrapper">
+          <h2>An interview that says a lot - why not give it a listen?</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/D9f6149mgRg?si=LCog4Vi87MrBpdBB"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <footer class="site-footer">
+          <p>&copy; 2025 Peach Pit Fan Page. All rights reserved.</p>
+        </footer>
       </div>
-
-      <footer class="site-footer">
-        <p>&copy; 2025 Peach Pit Fan Page. All rights reserved.</p>
-      </footer>
     </div>
+  </div>
 </body>
 
 </html>

@@ -2,30 +2,22 @@
 
 
 body {
-  background-color: #100230;  /* or your chosen variant */
-  color: #ffffff;             /* dark text for contrast */
+  background-color: #100230;
+  /* or your chosen variant */
+  color: #ffffff;
+  /* dark text for contrast */
   font-size: 1.9rem;
   margin: auto;
-  padding: auto;
-  font-family:'Funnel Sans', sans-serif;
+  padding: 0;
+  font-family: 'Funnel Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#content {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    min-height: 650px;
-    max-width: 1150px;
-    margin-inline: auto;
-}
-
-#content p, #content h1 {
-  font-size: 1.9rem;
-  line-height: 3rem;
-  margin: 2rem 0;
+.pagewrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -38,11 +30,18 @@ header {
 
 #logowrapper {
   display: flex;
-  align-items: center; 
-  gap: 0; /* no space between logo and text */
-  flex-grow: 1; 
+  align-items: center;
+  gap: 0;
+  /* no space between logo and text */
+  flex-grow: 1;
   width: 100%;
   background-color: #1a1a1a;
+}
+
+@supports (container-type: inline-size){
+  #logowrapper {
+    container-type: inline-size;
+  }
 }
 
 .logo {
@@ -58,10 +57,11 @@ header {
 }
 
 .burgericon {
- width: 100%;
- position: relative;
+  width: 100%;
+  position: relative;
 }
-.burgericon > span {
+
+.burgericon>span {
   display: block;
   width: 80%;
   height: 8px;
@@ -72,27 +72,30 @@ header {
   margin-left: 10%;
 }
 
-.burgericon > span:first-child {
-margin-top: 15px;
-}
 h1.peach-pit-style {
   font-family: 'VT323', sans-serif;
-  font-size: 9vw;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(245, 242, 70);
   background-color: #1a1a1a;
   display: inline-block;
   padding: 0.2em 0.4em;
-  margin: 0; /* remove default margin */
+  margin: 0;
+  /* remove default margin */
   flex-grow: 4;
-  flex-basis: 2;
 }
 
-.topnav, .burgerlinks {
+@supports (font-size: 9cqw){
+  h1.peach-pit-style  {
+    font-size: 9cqw;
+  }
+}
+
+.topnav {
   background-color: #000001;
   overflow: -moz-hidden-unscrollable;
-  margin-top: 1.5rem; 
+  margin-top: 1.5rem;
 }
 
 /* Style the links inside the navigation bar */
@@ -111,10 +114,12 @@ h1.peach-pit-style {
   background-color: #b92703;
   color: black;
 }
-.topnav a:visited{
+
+.topnav a:visited {
   /* background-color: #ddd; */
   color: #ffffff;
 }
+
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #04da8c;
@@ -122,12 +127,16 @@ h1.peach-pit-style {
 }
 
 
+/* End of header styles */
 
-
+figcaption {
+  text-align: center;
+}
 
 a {
   color: #f28d74;
-  text-decoration: none; /* removes underline */
+  text-decoration: none;
+  /* removes underline */
 }
 
 /* Visited link */
@@ -146,16 +155,26 @@ a:active {
   color: rgb(255, 255, 255);
 }
 
-@/* Only targets picture-gallery section */
+/* Only targets picture-gallery section */
 .picture-gallery {
   padding: 1rem;
-  background-color: #f6eee3;
+  background-color: #000611;
 }
 
-.picture-gallery h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #f5e965;
+
+.gradient-wave {
+  margin: 2rem, 2rem;
+}
+
+.gradient-wave svg {
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
+.gradient-wave path {
+  /* optional glow */
+  filter: drop-shadow(0 0 6px rgba(255, 0, 204, 0.5));
 }
 
 /* Grid for 9 images */
@@ -203,6 +222,28 @@ a:active {
 }
 
 
+
+
+/* Content styles begin */
+
+
+#content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  min-height: 650px;
+  max-width: 1150px;
+  margin-inline: auto;
+}
+
+#content p,
+#content h1 {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  margin: 0 0 2rem;
+}
+
+
 img {
   display: block;
   max-width: 100%;
@@ -218,6 +259,7 @@ table {
   margin: 2rem 0;
   color: #fff;
   font-family: 'Funnel Sans', sans-serif;
+  border: "1";
 }
 
 caption {
@@ -228,7 +270,8 @@ caption {
   color: rgb(255, 252, 82);
 }
 
-th, td {
+th,
+td {
   border: 1.2px solid #ffffff50;
   padding: 12px 16px;
   text-align: left;
@@ -259,11 +302,13 @@ tr:nth-child(odd) {
 #contribute h3 {
   color: rgb(245, 242, 70);
   margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 2.5rem;
 }
 
 #contribute p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.2;
+  font-size: 1.8rem;
 }
 
 #contribute a {
@@ -276,20 +321,34 @@ tr:nth-child(odd) {
 }
 
 #funfacts-section {
-    width: 100%;
-    margin-top: 4rem;
-    padding: 0rem;
-    font-family: 'Funnel Sans', sans-serif;
-    color: #ffffff;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 0rem;
+  font-family: 'Funnel Sans', sans-serif;
+  color: #ffffff;
 }
 
-#funfacts-section h2 {
-    font-family: 'VT323', sans-serif;
-    color: rgb(246, 244, 162);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
+h2 {
+  font-family: 'VT323', sans-serif;
+  color: rgb(246, 244, 162);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
+h4 {
+  font-family: 'VT323', sans-serif;
+  color: rgb(246, 244, 162);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+caption {
+  font-family: 'VT323', sans-serif;
+  color: rgb(246, 244, 162);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
 
 .float-left {
   float: left;
@@ -297,20 +356,24 @@ tr:nth-child(odd) {
 }
 
 .membersimage {
-  width:30%;
+  width: 30%;
   min-width: 15%;
-  max-width:30%;
+  max-width: 30%;
 }
 
 #videowrapper {
   align-self: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#videowrapper > h2 {
+#videowrapper>h2 {
   margin-bottom: 55px;
+}
+
+iframe {
+  border: 0;
 }
 
 .site-footer {

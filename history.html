@@ -4,31 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Peach Pit Unofficial Fan Page</title>
     <meta name="description"
         content="This is a website designed for fans of the Canadian indie pop band, called Peach Pit.
     It features 4 pages: one to serve as a homepage (landing page), one that details their work including all their albums,one serving
-    as a gallery, one detailing all their tours to date, one that lists fun facts where submissions can also be added by visitors." />
-    <meta name="keywords" content="Peach Pit Fan Page, Peach Pit, Peach Pit Band" />
-    <meta name="author" content="Anna Keil" />
-    <link rel="stylesheet" href="style.css" />
+    as a gallery, one detailing all their tours to date, one that lists fun facts where submissions can also be added by visitors.">
+    <meta name="keywords" content="Peach Pit Fan Page, Peach Pit, Peach Pit Band">
+    <meta name="author" content="Anna Keil">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <div id="content">
+    <div class="pagewrapper">
+        <div id="burgermenu">
+            <div class="burgericon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <input type="checkbox" id="burgercheckbox">
+            <div id="burgerscreen">
+                <div class="burgerlinks">
+                    <a href="index.html">Home</a>
+                    <a href="imagery.html">Imagery</a>
+                    <a class="active" href="#home">History</a>
+                    <a href="funfacts.html">Fun Facts</a>
+                </div>
+            </div>
+        </div>
         <header>
             <div id="logowrapper">
-                <img src="images/logo.png"My Website Logo" class="logo">
+                <!-- <img src="images/logo.png"My Website Logo" class="logo"> -->
+                <div class="logo"></div>
                 <h1 class=peach-pit-style>Peach Pit Fan Page</h1>
             </div>
             <div class="topnav">
                 <a href="index.html">Home</a>
                 <a href="imagery.html">Imagery</a>
-                <a class="active" href="history.html">History</a>
+                <a class="active" href="#home">History</a>
                 <a href="funfacts.html">Fun Facts</a>
             </div>
         </header>
-        <div>
+        <div id="content">
             <h2>Hope you're ready, it's (hi)story time!</h2>
             <h4>First, let's see who Peach Pit are</h4>
             <p>Peach Pit is an indie pop band from Vancouver, Canada, known for their laid-back sound, catchy guitar
@@ -61,7 +80,7 @@
                 playlist, welcome. You’re officially part of the Peach Pit crowd!</p>
             <br>
             <div>
-                <table border="1" cellpadding="8" cellspacing="0">
+                <table>
                     <caption><strong>Peach Pit – Notable &amp; Memorable Concerts (2018–2025)</strong></caption>
                     <thead>
                         <tr>
@@ -163,15 +182,17 @@
                         Please send your submissions via email by clicking
                         <a href="mailto:keilanna0729@gmail.com?subject=Peach%20Pit%20Concert%20Submission"
                             target="_blank">HERE</a>.
-                        </a>
                     </p>
-                    <p><em>Please include the date, venue, location, and why it was special. Thanks for helping us keep the fan
-                        page lively!</em></p>
+                    <p><em>Please include the date, venue, location, and why it was special. Thanks for helping us keep
+                            the fan
+                            page lively!</em></p>
                 </section>
                 <footer class="site-footer">
                     <p>&copy; 2025 Peach Pit Fan Page. All rights reserved.</p>
                 </footer>
-         </div>   </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
