@@ -194,7 +194,7 @@ a:active {
 
 /* Blur effect on non-hovered cards */
 .picture-gallery .gallery-list:has(li:hover) li:not(:hover) {
-  filter: blur(4px);
+  filter: blur(6px);
 }
 
 /* Images */
