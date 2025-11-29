@@ -366,9 +366,26 @@ caption {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-#videowrapper>h2 {
+#videowrapper::after {
+  display:block;
+  content: " ";
+  padding-top: 56.25%;
+}
+
+#videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+
+.videoheader {
   margin-bottom: 55px;
 }
 

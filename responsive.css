@@ -112,6 +112,10 @@
     #content {
         margin-top: var(--item-size);
     }
+
+    .historytable th:last-child, .historytable td:last-child, .historytable th:first-child, .historytable td:first-child {
+        display: none;
+    }
 }
 
 /* Large sizes */
