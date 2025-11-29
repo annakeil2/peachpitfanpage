@@ -233,6 +233,7 @@ a:active {
   min-height: 650px;
   max-width: 1150px;
   margin-inline: auto;
+  padding: 0 10px;
 }
 
 #content p,
