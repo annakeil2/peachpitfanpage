@@ -136,7 +136,6 @@ figcaption {
 a {
   color: #f28d74;
   text-decoration: none;
-  /* removes underline */
 }
 
 /* Visited link */
@@ -163,7 +162,7 @@ a:active {
 
 
 .gradient-wave {
-  margin: 2rem, 2rem;
+  margin: 2rem 2rem;
 }
 
 .gradient-wave svg {
@@ -177,7 +176,7 @@ a:active {
   filter: drop-shadow(0 0 6px rgba(255, 0, 204, 0.5));
 }
 
-/* Grid for 9 images */
+/* Grid for 20 images */
 .picture-gallery .gallery-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -259,7 +258,7 @@ table {
   margin: 2rem 0;
   color: #fff;
   font-family: 'Funnel Sans', sans-serif;
-  border: "1";
+  border: 3px;
 }
 
 caption {

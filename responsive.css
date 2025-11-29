@@ -1,14 +1,14 @@
+:root {
+    --item-size: 100px;
+}
+
 #burgermenu {
     display: none;
 }
 
 /* Small sizes */
 @media (max-width: 1024px) {
-    @property --item-size {
-        syntax: "<length>";
-        inherits: false;
-        initial-value: 100px;
-    }
+
 
     body {
         align-items: flex-start;
@@ -27,15 +27,11 @@
     }
 
     .logo {
-        /* height: var(--item-size); */
         background-size: 100%;
-        /* flex-basis: 100px;
-        aspect-ratio: 3 / 2; */
     }
 
-    h1.peach-pit-style {
-        
-    }
+    h1.peach-pit-style {}
+
     .topnav {
         display: none;
     }
