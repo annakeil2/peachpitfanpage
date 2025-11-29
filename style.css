@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=VT323&display=swap');
 
-
 body {
   background-color: #100230;
   /* or your chosen variant */
@@ -20,7 +19,6 @@ body {
   flex-direction: column;
 }
 
-
 header {
   display: flex;
   flex-direction: column;
@@ -32,13 +30,12 @@ header {
   display: flex;
   align-items: center;
   gap: 0;
-  /* no space between logo and text */
   flex-grow: 1;
   width: 100%;
   background-color: #1a1a1a;
 }
 
-@supports (container-type: inline-size){
+@supports (container-type: inline-size) {
   #logowrapper {
     container-type: inline-size;
   }
@@ -86,8 +83,8 @@ h1.peach-pit-style {
   flex-grow: 4;
 }
 
-@supports (font-size: 9cqw){
-  h1.peach-pit-style  {
+@supports (font-size: 9cqw) {
+  h1.peach-pit-style {
     font-size: 9cqw;
   }
 }
@@ -98,7 +95,6 @@ h1.peach-pit-style {
   margin-top: 1.5rem;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #ffffff;
@@ -109,18 +105,15 @@ h1.peach-pit-style {
   font-size: 2.2rem;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #b92703;
+  background-color: #f2ed9a;
   color: black;
 }
 
 .topnav a:visited {
-  /* background-color: #ddd; */
   color: #ffffff;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #04da8c;
   color: rgb(4, 7, 0);
@@ -134,32 +127,29 @@ figcaption {
 }
 
 a {
-  color: #f28d74;
+  color: #f7ae9c;
   text-decoration: none;
 }
 
-/* Visited link */
 a:visited {
-  color: rgb(253, 182, 177);
+  color: rgb(248, 240, 240);
 }
 
-/* Hover effect */
+
 a:hover {
   color: #f4ed80;
   text-decoration: underline
 }
 
-/* Active link (when clicked) */
 a:active {
   color: rgb(255, 255, 255);
 }
 
-/* Only targets picture-gallery section */
+/* Picture-gallery section */
 .picture-gallery {
   padding: 1rem;
   background-color: #000611;
 }
-
 
 .gradient-wave {
   margin: 2rem 2rem;
@@ -172,7 +162,6 @@ a:active {
 }
 
 .gradient-wave path {
-  /* optional glow */
   filter: drop-shadow(0 0 6px rgba(255, 0, 204, 0.5));
 }
 
@@ -372,7 +361,7 @@ caption {
 }
 
 #videowrapper::after {
-  display:block;
+  display: block;
   content: " ";
   padding-top: 56.25%;
 }
@@ -381,7 +370,7 @@ caption {
   position: absolute;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 

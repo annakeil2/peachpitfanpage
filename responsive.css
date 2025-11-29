@@ -91,29 +91,28 @@
     }
 
 
-    /* Change the color of links on hover */
     .burgerlinks a:hover {
         background-color: #b92703;
         color: black;
     }
 
     .burgerlinks a:visited {
-        /* background-color: #ddd; */
         color: #ffffff;
     }
 
-    /* Add a color to the active/current link */
     .burgerlinks a.active {
         background-color: #04da8c;
         color: rgb(4, 7, 0);
     }
 
-
     #content {
         margin-top: var(--item-size);
     }
 
-    .historytable th:last-child, .historytable td:last-child, .historytable th:first-child, .historytable td:first-child {
+    .historytable th:last-child,
+    .historytable td:last-child,
+    .historytable th:first-child,
+    .historytable td:first-child {
         display: none;
     }
 }
